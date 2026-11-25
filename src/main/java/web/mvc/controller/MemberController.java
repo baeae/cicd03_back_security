@@ -24,7 +24,7 @@ public class MemberController {
         return ResponseEntity.status(HttpStatus.CREATED).body("OK");
     }
 
-    //중복체크
+    //중복체크 확인
     @GetMapping(value = "/members/{id}", produces = "text/plain;charset=UTF-8")
     public String duplicateIdCheck(@PathVariable String id){
         System.out.println("id = " + id);
