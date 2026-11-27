@@ -19,7 +19,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
      registry.addMapping("/**")
     // .allowedOrigins("http://localhost:5173","http://localhost:4173")
      //.allowedOrigins("http://43.200.184.113:5173", "http://43.200.184.113:4173")
-      .allowedOrigins("http://3.34.143.7", "http://3.34.143.7")
+      .allowedOrigins("http://3.34.143.7", "http://3.34.143.7:80")
       //.allowedOrigins("http://heejung.n-e.kr", "https://heejung.n-e.kr")
      .allowedMethods("OPTIONS","GET","POST","PUT","DELETE");
   }

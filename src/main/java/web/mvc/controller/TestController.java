@@ -18,4 +18,10 @@ public class TestController {
                 .contentType(MediaType.valueOf("text/plain;charset=UTF-8"))  //
                 .body("CI/CD GitHub Action Slack - spring Security OK 시작! - Terraform 연결..22");
     }
+
+    @GetMapping("/check")
+    public String check() {
+        log.info("test 요청됨...");
+        return "spring Security start";
+    }
 }
